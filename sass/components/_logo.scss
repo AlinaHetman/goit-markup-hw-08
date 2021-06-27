@@ -1,0 +1,34 @@
+.logo {
+    display: inline-block;
+}
+.page-header__logo {
+    margin-right: 93px;
+}
+.label {
+    font-family: var(--tittle-font);
+    color: var(--tittle-cl);
+    font-size: 26px;
+    line-height: 0.84;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+.label-second {
+    font-family: var(--tittle-font);
+    color: var(--main-text-cl);
+    font-size: 26px;
+    line-height: 0.84;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: var(--label-text);
+}
+.label__second {
+    color: var(--alt-tittle-cl);
+}
+.footer__label {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+    }
+}

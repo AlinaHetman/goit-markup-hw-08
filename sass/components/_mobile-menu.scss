@@ -1,0 +1,109 @@
+.mobile-menu {
+    position: absolute;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 48px 40px 48px;
+    background-color: var(--alt-tittle-cl);
+}
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: fixed;
+}
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mobile-menu__list {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--main-text-cl);
+    margin-bottom: 302px;
+}
+.mobile-menu__link-a {
+    font-size: 40px;
+}
+
+.mobile-menu__part {
+    margin-bottom: 64px;
+}
+.mobile-menu__part-item {
+    margin-bottom: 32px;
+}
+.mobile-menu-p__item2 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--tittle-cl);
+}
+.mobile-menu-p__item {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--alt-text-cl);
+}
+.mobile-menu__socials {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--tittle-cl);
+}
+.mobile-menu__socials-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+   }
+.mobile-menu__socials-item{
+     padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mobile-menu__btn {
+    position:absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+    fill: var(--button-bg);}
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    &.is-open{
+        display: none;
+    }
+}
+
+.mobile__close-btn {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background-color: var(--card-bg);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus{
+    fill:var(--button-bg);
+}}
+.mobile__link-current {
+  position: relative;
+  color: var(--tittle-cl);
+}

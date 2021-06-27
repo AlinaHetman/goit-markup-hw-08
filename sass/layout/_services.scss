@@ -1,0 +1,31 @@
+.service__item {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
+
+.service__text {
+    color: var(--alt-text-cl);
+    letter-spacing: 0.03em;
+}
+.serv__item {
+    flex-basis: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 120px) / 4);
+    }
+}

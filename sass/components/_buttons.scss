@@ -1,0 +1,88 @@
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--main-text-cl);
+    background-color: var(--second-bg);
+    border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-bg);
+        color: var(--alt-tittle-cl);
+    }
+}
+.btn--dark {
+    padding: 10px 32px;
+    display: block;
+    margin: auto;
+    color: var(--alt-tittle-cl);
+    background-color: var(--button-bg);
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    @media screen and (max-width: 767.98px) {
+        justify-content: start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+}
+.btn-list__item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
+}
+.btn-list__set {
+    margin-left: 8px;
+    transition-property: color, border-color, backgroud-color, box-shadow, box-shadow;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background: var(--button-bg);
+        color: var(--alt-tittle-cl);
+    }
+}
+.btn-sub {
+    background: var(--button-bg);
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--alt-tittle-cl);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 28px;
+    padding-left: 29px;
+    padding-bottom: 10px;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: 12px;
+    }
+}
+.pointer {
+    cursor: pointer;
+}
